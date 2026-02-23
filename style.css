@@ -124,3 +124,16 @@ body {
 .draw {
     color: var(--draw);
 }
+.floatingButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 10%;
+    background-color: white;
+}

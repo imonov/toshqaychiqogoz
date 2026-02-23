@@ -16,7 +16,15 @@ let eqlCnt =
 const selectBtn = document.querySelectorAll(".btn-select");
 const resultText = document.querySelector(".result");
 const countLbl = document.querySelector(".count");
+const floatingResetButton = document.querySelector(".floatingButton");
 countLbl.innerHTML = `Yutishlar: ${winCnt}; Mag'lubiyatlar: ${rscCnt}; Durranglar: ${eqlCnt}`;
+
+floatingResetButton.addEventListener("click", () => {
+    localStorage.setItem("win", 0);
+    localStorage.setItem("rsc", 0);
+    localStorage.setItem("eql", 0);
+    location.reload();
+});
 
 const getComVal = () => Math.floor(Math.random() * 3);
 
