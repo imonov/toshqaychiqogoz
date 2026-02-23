@@ -67,7 +67,7 @@ selectBtn.forEach((btn) => {
         }
 
         resultText.innerHTML += resHTML;
-        countLbl.innerHTML = `Yutishlar: ${winCnt}; Mag'lubiyatlar: ${rscCnt}; Durranglar: ${eqlCnt}`;
+        countLbl.innerHTML = `<p>Yutishlar: ${winCnt}; Mag'lubiyatlar: ${rscCnt}; Durranglar: ${eqlCnt}</p>`;
 
         localStorage.setItem("win", winCnt);
         localStorage.setItem("rsc", rscCnt);
