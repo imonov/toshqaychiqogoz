@@ -24,10 +24,11 @@ let result = false;
 
 selectBtn.forEach((btn) => {
     btn.addEventListener("click", function (e) {
-        if (winCnt + eqlCnt + rscCnt >= 10) {
+        if (winCnt + eqlCnt + rscCnt > 9) {
             winCnt = 0;
             eqlCnt = 0;
             rscCnt = 0;
+
             return;
         }
 
