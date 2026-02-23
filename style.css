@@ -1,0 +1,126 @@
+:root {
+    --bg: #0f172a;
+    --card: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+
+    --win: #22c55e;
+    --lose: #ef4444;
+    --draw: #facc15;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 20%, #1e293b, #020617);
+    color: var(--text);
+    height: 100vh;
+}
+
+/* CENTERING */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* CARD */
+.container {
+    width: 420px;
+    padding: 40px 30px;
+    border-radius: 22px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn-select {
+    width: 110px;
+    height: 120px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.25s ease;
+}
+
+.btn-select:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-select:active {
+    transform: scale(0.95);
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+/* RESULT PANEL */
+.result {
+    margin-top: 10px;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    min-height: 80px;
+    background: rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.result p {
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.result h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.win {
+    color: var(--win);
+}
+.lose {
+    color: var(--lose);
+}
+.draw {
+    color: var(--draw);
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tosh Qaychi Qog'oz</title>
+
+        <!-- Google font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="title">Tosh • Qaychi • Qog'oz</h1>
+                <p class="subtitle">Birini tanlang</p>
+
+                <div class="row">
+                    <button data-value="0" class="btn-select stone">
+                        <span class="emoji">🪨</span>
+                        <span>Tosh</span>
+                    </button>
+
+                    <button data-value="1" class="btn-select scissors">
+                        <span class="emoji">✂️</span>
+                        <span>Qaychi</span>
+                    </button>
+
+                    <button data-value="2" class="btn-select paper">
+                        <span class="emoji">📄</span>
+                        <span>Qog'oz</span>
+                    </button>
+                </div>
+
+                <div class="result"></div>
+            </div>
+        </div>
+
+        <script type="module" src="./game.js"></script>
+    </body>
+</html>
